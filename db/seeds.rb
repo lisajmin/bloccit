@@ -17,10 +17,6 @@ posts = Post.all
   )
 end
 
-puts "#{Post.count}"
-Post.find_or_create_by(title: "Caffe bene", body:"Great place to grab some coffee and pastries. Plenty of tables are available. Best part: FREE WIFI!")
-puts "#{Post.count}"
-
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
