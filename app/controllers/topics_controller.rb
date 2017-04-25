@@ -56,5 +56,5 @@ class TopicsController < ApplicationController
       render :show
     end
   end
-  
+
 end
