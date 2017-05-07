@@ -79,4 +79,14 @@ RSpec.describe Post, type: :model do
       end
     end
   end
+
+  describe "#create_vote" do
+    it "sets vote to 1 when post is created" do
+      expect(post.up_votes).to eq(1)
+    end
+
+    it "associates the vote with the owner of the post" do
+      expect(post.votes.first.user).to eq(post.user)
+    end
+  end
 end
